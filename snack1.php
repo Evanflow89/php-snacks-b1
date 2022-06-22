@@ -5,24 +5,28 @@ Olimpia Milano - Cantù | 55-60  -->
 
 $games = [
     [
-        "homeTeam" => "Chicago Bulls",
-        "guestTeam" => "Milwaukee Bucks"
-        "homeScore" => 90,
-        "guestTeam" => 103,
+        'homeTeam' => 'Chicago Bulls',
+        'guestTeam' => 'Milwaukee Bucks',
+        'homeScore' => 90,
+        'guestScore' => 103,
     ],
     [
-        "homeTeam" => "Toronto Raptors",
-        "guestTeam" => "Orlando Magic"
-        "homeScore" => 99,
-        "guestTeam" => 77,
+        "homeTeam" => 'Toronto Raptors',
+        'guestTeam' => "Orlando Magic",
+        'homeScore' => 99,
+        'guestScore' => 77,
     ],
     [
-        "homeTeam" => "Detroit Pistons",
-        "guestTeam" => "Indiana Pacers"
-        "homeScore" => 109,
-        "guestTeam" => 88,
+        "homeTeam" => 'Detroit Pistons',
+        'guestTeam' => 'Indiana Pacers',
+        'homeScore' => 109,
+        'guestScore' => 88,
     ],
-]
+];
+
+for ($i = 0; $i < count($games); $i++) {
+    echo $games["homeTeam"] - $games["guestTeam"] | $games["homeScore"]-$games["guestScore"];
+}
 
 ?>
 
