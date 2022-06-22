@@ -15,3 +15,24 @@ if (strlen($userName) >= 3 && (!filter_var($userMail, FILTER_VALIDATE_EMAIL) ===
 }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+        <label for="name">Inserisci l'username</label>
+        <input name="name" type="text">
+        <label for="email">Inserisci l'indirizzo email</label>
+        <input name="email" type="email">
+        <label for="age">Inserisci la tua età</label>
+        <input name="age" type="text">
+        <button>Submit</button>
+    </form>
+</body>
+</html>
