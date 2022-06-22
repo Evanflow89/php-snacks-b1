@@ -8,7 +8,7 @@ $userName = $_GET["name"];
 $userMail = $_GET["email"];
 $userAge = $_GET["age"];
 
-if (strlen($userName) >= 3 && (!filter_var($userMail, FILTER_VALIDATE_EMAIL) === false) && !is_nan($userAge)){
+if (strlen($userName) >= 3 && (!filter_var($userMail, FILTER_VALIDATE_EMAIL) === false) && is_numeric($userAge)){
     echo "Accesso Riuscito";
 } else {
     echo "Accesso Negato";
