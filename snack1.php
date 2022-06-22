@@ -17,7 +17,7 @@ $games = [
         'guestScore' => 77,
     ],
     [
-        "homeTeam" => 'Detroit Pistons',
+        'homeTeam' => 'Detroit Pistons',
         'guestTeam' => 'Indiana Pacers',
         'homeScore' => 109,
         'guestScore' => 88,
@@ -25,7 +25,7 @@ $games = [
 ];
 
 for ($i = 0; $i < count($games); $i++) {
-    echo $games["homeTeam"]. " - ".  $games["guestTeam"]. " | ".  $games["homeScore"]."-". $games["guestScore"];
+    echo $games[$i]["homeTeam"]. " - ".  $games[$i]["guestTeam"]. " | ".  $games[$i]["homeScore"]."-". $games[$i]["guestScore"]. " ";
 };
 
 ?>
