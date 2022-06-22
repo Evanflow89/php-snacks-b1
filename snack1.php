@@ -25,7 +25,7 @@ $games = [
 ];
 
 for ($i = 0; $i < count($games); $i++) {
-    echo $games["homeTeam"]. " - ".  $games["guestTeam"]. " | ".  $games["homeScore"]."-" $games["guestScore"]
+    echo $games["homeTeam"]. " - ".  $games["guestTeam"]. " | ".  $games["homeScore"]."-". $games["guestScore"];
 };
 
 ?>
